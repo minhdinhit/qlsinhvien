@@ -170,8 +170,7 @@
             payload['where'] = {'id':payload.id};
             postData('update','db_sinhvien',payload,true);
         }else{
-            postData('add','db_sinhvien',payload,false);
-
+            postData('add','db_sinhvien',payload,true);
         }
     });
     function onDelete(id){
