@@ -1,6 +1,4 @@
 <?php
-    define('base_url','http://localhost/qlsinhvien');
-
     include ('config.php');
     include ('models/database.php');
     $d = new database($config);

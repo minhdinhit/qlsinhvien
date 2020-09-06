@@ -1,4 +1,6 @@
 <?php
+    define('base_url','http://localhost/qlsinhvien/');
+
     date_default_timezone_set('Asia/Ho_chi_minh');
 
     $config['host']     ='localhost';
@@ -20,5 +22,8 @@
         $json = json_encode($data);
         $json = str_replace('"',"'",$json);
         return $json;
+    }
+    function base_url($str=''){
+        return base_url.$str;
     }
 ?>

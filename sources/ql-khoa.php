@@ -70,7 +70,7 @@
         };
         if (id>0){
             payload['where']={'id':payload.id};
-            postData('update','db_khoa',payload,true);
+            postData('update','db_khoa',payload,false);
         }else{
             postData('add','db_khoa',payload,true);
         }

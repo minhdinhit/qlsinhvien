@@ -13,7 +13,7 @@ function postData(type,table,payload,reload){
     };
     $.ajax({
         type: "post",
-        url: uri+'/models/ajax.php',
+        url:'models/ajax.php',
         data: {'data':data},
         success: function (response) {
             if (reload){
@@ -24,7 +24,7 @@ function postData(type,table,payload,reload){
             }, 1000);
         },
         error: function (e){
-            alert(e);
+            console.log(e);
         }
     });
 }
